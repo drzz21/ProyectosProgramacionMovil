@@ -1,45 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dios.pasodeparametros.MainActivity">
+    android:fillViewport="true">
 
-    <Button
-        android:id="@+id/btnAgregarContacto"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/agre"
-        app:layout_constraintBottom_toTopOf="@+id/lsContactos"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.dios.pasodeparametros.MainActivity"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
 
-    <ListView
-        android:layout_width="0dp"
-        android:layout_height="361dp"
-        android:id="@+id/lsContactos"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="26dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="53dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="26dp"
-        android:layout_marginRight="26dp" />
+        <Button
+            android:id="@+id/btnAgregarContacto"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:text="@string/agre"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/lsContactos"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp" />
 
-</android.support.constraint.ConstraintLayout>
+        <ListView
+            android:id="@+id/lsContactos"
+            android:layout_width="0dp"
+            android:layout_height="369dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="31dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
