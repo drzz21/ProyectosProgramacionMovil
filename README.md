@@ -4,4 +4,5 @@
 # Proyectos programación móvil
 
   - Paso de datos entre activities
+  - Soporte multilingüe y multiresolución
  
