@@ -7,6 +7,7 @@
     android:baselineAligned="false"
     android:orientation="vertical">
 
+    <!--Layout para resolucion de pulgada de 7 pulgadas-->
 
     <EditText
         android:id="@+id/lbl2"
@@ -26,7 +27,8 @@
         app:layout_constraintTop_toBottomOf="@+id/lbl1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_alignRight="@+id/btnCambiarIdioma" />
 
     <EditText
         android:id="@+id/lbl1"
@@ -43,7 +45,8 @@
         android:text="@string/label1"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentRight="true" />
 
     <EditText
         android:id="@+id/lbl3"
@@ -62,7 +65,9 @@
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbl2"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_alignRight="@+id/lbl1"
+        android:layout_marginRight="34dp" />
 
     <Button
         android:id="@+id/btnCambiarIdioma"
@@ -79,7 +84,8 @@
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbl3"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/textView"
@@ -91,6 +97,7 @@
         android:layout_x="40dp"
         android:layout_y="409dp"
         android:text="usted esta en modo tablet  de 7 pulgadas :)"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_alignRight="@+id/lbl1" />
 
 </AbsoluteLayout>
