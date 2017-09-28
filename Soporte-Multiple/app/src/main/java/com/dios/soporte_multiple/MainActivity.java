@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.support.v7.app.AlertDialog;
+// librerias de soporte para plataformas anteriores de android
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,10 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //abrimos el cuadro de dialogo para cambiar idioma
     private void showDialog(){
         AlertDialog.Builder b = new AlertDialog.Builder(this);
         b.setTitle(getResources().getString(R.string.change));
-        //obtiene los idiomas del array de string.xml
+        //obtiene los idiomas del arreglo que hicimos en string.xml
         String[] types = getResources().getStringArray(R.array.languages);
         b.setItems(types, new DialogInterface.OnClickListener() {
 
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
 
                 dialog.dismiss();
+                //switch para cambiar el idioma elegido
                 switch(which){
                     case 0:
                         locale = new Locale("en");
@@ -67,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         config.locale =locale;
                         break;
                 }
+                //actualiza el idioma de los componentes de la aplicacion en base al idioma que elegimos
                 getResources().updateConfiguration(config, null);
                 Intent refresh = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(refresh);
