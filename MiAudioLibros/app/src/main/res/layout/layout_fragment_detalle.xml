@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment_detalle"
     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/titulo"
@@ -30,4 +33,6 @@
         android:layout_height="wrap_content" android:layout_below="@id/autor"
         android:layout_centerHorizontal="true" android:src="@mipmap/ic_launcher" />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

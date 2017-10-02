@@ -17,6 +17,7 @@ import java.util.Vector;
 public class AdaptadorLibros extends
         RecyclerView.Adapter<AdaptadorLibros.ViewHolder> {
     private View.OnClickListener onClickListener;
+    private View.OnLongClickListener onLongClickListener;
 
 
     private LayoutInflater inflador; //Crea Layouts a partir del XML protected Vector<Libro> vectorLibros; //Vector con libros a visualizar private Context contexto;
@@ -26,6 +27,8 @@ public class AdaptadorLibros extends
     public void setOnItemClickListener(View.OnClickListener onClickListener){
         this.onClickListener = onClickListener;
     }
+
+    public void setOnItemLongClickListener(View.OnLongClickListener                                                     onLongClickListener) {     this.onLongClickListener = onLongClickListener; }
 
     public AdaptadorLibros(Context contexto, Vector<Libro> vectorLibros)
     {
@@ -50,6 +53,7 @@ public class AdaptadorLibros extends
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) { // Inflamos la vista desde el xml
         View v = inflador.inflate(R.layout.elemento_selector, null);
+        v.setOnLongClickListener(onLongClickListener);
         v.setOnClickListener(onClickListener);
         return new ViewHolder(v);
     }

@@ -10,12 +10,12 @@ import java.util.Vector;
 
 public class Aplicacion extends Application {
     private Vector<Libro> vectorLibros;
-    private AdaptadorLibros adaptador;
+    private AdaptadorLibrosFiltro adaptador;
     @Override
     public void onCreate() {
         vectorLibros = Libro.ejemploLibros();
-        adaptador       = new AdaptadorLibros (this, vectorLibros); }
-    public AdaptadorLibros getAdaptador() {
+        adaptador       = new AdaptadorLibrosFiltro (this, vectorLibros); }
+    public AdaptadorLibrosFiltro getAdaptador() {
         return adaptador; }
     public Vector<Libro> getVectorLibros() {
         return vectorLibros;

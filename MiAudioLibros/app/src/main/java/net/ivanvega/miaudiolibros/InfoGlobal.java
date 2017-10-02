@@ -10,7 +10,7 @@ import java.util.Vector;
 
 public class InfoGlobal {
     private Vector<Libro> vectorLibros;
-    private AdaptadorLibros adaptador;
+    private AdaptadorLibrosFiltro adaptador;
 
     private  static InfoGlobal INSTANCIA = new InfoGlobal();
 
@@ -22,10 +22,10 @@ public class InfoGlobal {
 
     public void inicializa(Context contexto){
         vectorLibros = Libro.ejemploLibros();
-        adaptador = new AdaptadorLibros(contexto, vectorLibros);
+        adaptador = new AdaptadorLibrosFiltro(contexto, vectorLibros);
     }
 
-    public AdaptadorLibros getAdaptador() {
+    public AdaptadorLibrosFiltro getAdaptador() {
         return adaptador; }
 
     public Vector<Libro> getVectorLibros() {
