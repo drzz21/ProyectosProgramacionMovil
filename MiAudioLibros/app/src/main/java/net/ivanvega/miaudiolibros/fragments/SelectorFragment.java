@@ -39,6 +39,12 @@ public class SelectorFragment extends Fragment {
     private Vector<Libro> vectorLibros;
 
     @Override
+    public void onResume() {
+        ((MainActivity) getActivity()).mostrarElementos(true);
+        super.onResume();
+    }
+
+    @Override
     public void onAttach(Context contexto) {
         super.onAttach(contexto);
         if (contexto instanceof Activity) {
