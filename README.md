@@ -7,4 +7,5 @@
   - Soporte multilingüe y multiresolución
   - Mi audiolibro
   - Control de permisos (Permisos peligrosos)
+  - Agenda SQLite
  
