@@ -64,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
     private void explicarUsoPermiso() {
 
         //Para ver si se marco no volver a preguntar
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CALL_PHONE)) {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
             alertDialogBasico();
             pedirLectura();
-        }else if ((ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) && (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE))) {
+        }else if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             alertDialogBasico();
             pedirescritura();
         }
