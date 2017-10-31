@@ -15,7 +15,7 @@ public class ActividadConFragmentHardcoded extends AppCompatActivity implements 
     @Override
     public void responder(String datos){
         android.app.FragmentManager fragmentManager = getFragmentManager();
-        FragemntoDos fragmentoDos = (FragemntoDos) fragmentManager.findFragmentById(R.id.fragDos);
+        Fragmento2 fragmentoDos = (Fragmento2) fragmentManager.findFragmentById(R.id.fragDos);
         fragmentoDos.changetxt(datos);
 
     }

@@ -4,15 +4,18 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.R.menu.*;
 
 /**
  * Created by alcohonsilver on 23/10/17.
  */
 
-public class FragmentoUno extends Fragment {
+public class Fragmento1 extends Fragment {
 
     Button btn1;
     Button btn2;
@@ -27,9 +30,18 @@ public class FragmentoUno extends Fragment {
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menucito, menu);
+        super.onCreateOptionsMenu(menu,inflater);
+    }
+
+
+    @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
     }
+
 
 
 

@@ -2,8 +2,6 @@ package net.ivanvega.manejodefragmentos;
 
 import android.app.Fragment;
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             android.app.FragmentTransaction ft = fm.beginTransaction();
 
-            FragemntoDos frag = new FragemntoDos();
+            Fragmento2 frag = new Fragmento2();
 
             ft.add(R.id.contenedor_fragment, frag);
 

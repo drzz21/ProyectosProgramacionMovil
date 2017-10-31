@@ -8,6 +8,8 @@
     tools:context="net.ivanvega.manejodefragmentos.MainActivity">
 
 
+
+
     <Button
         android:id="@+id/btnHardcode"
         android:layout_width="match_parent"

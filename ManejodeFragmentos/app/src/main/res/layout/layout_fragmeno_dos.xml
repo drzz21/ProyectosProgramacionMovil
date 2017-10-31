@@ -7,7 +7,7 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxFragmento2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CheckBox" />
@@ -18,11 +18,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="Name Fragmento 2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnFragmento2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="btn fragmento 2" />
+
+
+
 </LinearLayout>
